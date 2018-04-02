@@ -1,0 +1,56 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set(/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/ghassen/patmat/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.17:component from component compiler for Scala 2.11.12[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.17:component from component compiler for Scala 2.11.12[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3915aa4d, interfacing (CompilerInterface) with Scala compiler version 2.11.12[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/ghassen/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/ghassen/patmat/target/scala-2.11/classes:/home/ghassen/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar:/home/ghassen/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/home/ghassen/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar:/home/ghassen/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.11/2.2.4/scalatest_2.11-2.2.4.jar[0m
+[0m[[31merror[0m] [0m/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala:108: value weight is not a member of type parameter T[0m
+[0m[[31merror[0m] [0m    case y :: ys => if(x.weight < y.weight) x::xs else y::insert (x, ys)[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0m/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala:108: value weight is not a member of type parameter T[0m
+[0m[[31merror[0m] [0m    case y :: ys => if(x.weight < y.weight) x::xs else y::insert (x, ys)[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala:113: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : List[patmat.Huffman.CodeTree][0m
+[0m[[31merror[0m] [0m required: List[patmat.Huffman.Leaf][0m
+[0m[[31merror[0m] [0m    case y::xs => insert(new Leaf(y._1,y._2), makeOrderedLeafList(xs))[0m
+[0m[[31merror[0m] [0m                        ^[0m
+[0m[[31merror[0m] [0m/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala:136: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : List[Char][0m
+[0m[[31merror[0m] [0m required: Char[0m
+[0m[[31merror[0m] [0m      insert(new Fork(trees.head, trees.tail.head, chars(trees.head) :: chars(trees.tail.head), trees.head.weight + trees.tail.head.weight), trees.tail.tail)[0m
+[0m[[31merror[0m] [0m                                                                     ^[0m
+[0m[[31merror[0m] [0m/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala:136: value weight is not a member of patmat.Huffman.CodeTree[0m
+[0m[[31merror[0m] [0m      insert(new Fork(trees.head, trees.tail.head, chars(trees.head) :: chars(trees.tail.head), trees.head.weight + trees.tail.head.weight), trees.tail.tail)[0m
+[0m[[31merror[0m] [0m                                                                                                           ^[0m
+[0m[[31merror[0m] [0m/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala:136: value weight is not a member of patmat.Huffman.CodeTree[0m
+[0m[[31merror[0m] [0m      insert(new Fork(trees.head, trees.tail.head, chars(trees.head) :: chars(trees.tail.head), trees.head.weight + trees.tail.head.weight), trees.tail.tail)[0m
+[0m[[31merror[0m] [0m                                                                                                                                    ^[0m
+[0m[[31merror[0m] [0m/home/ghassen/patmat/src/main/scala/patmat/Huffman.scala:171: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : List[patmat.Huffman.CodeTree][0m
+[0m[[31merror[0m] [0m required: patmat.Huffman.CodeTree[0m
+[0m[[31merror[0m] [0m    until(singleton,combine)(makeOrderedLeafList(times(chars)))[0m
+[0m[[31merror[0m] [0m         ^[0m
+[0m[[31merror[0m] [0m7 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m

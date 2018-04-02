@@ -1,0 +1,21 @@
+console
+def times(chars: List[Char]): List[(Char, Int)] = {
+     val c = chars.head
+     val rest = list()
+     def computeChar(charsTail: List[Char], n: Int): Int = charsTail match {
+       case list() => n
+       case y::xs => {
+         if(y == c) {
+           computeChar(xs, n+1)
+         }else{
+           y::rest
+           computeChar(xs, n)
+         }
+       }
+     }
+     (c, computeChar(chars.tail, 0))::times(rest)
+   
+scala
+   
+console
+test
